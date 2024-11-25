@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Build Your Smoothie</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <header>
+    <h1>🍓 Build Your Perfect Smoothie 🍍</h1>
+  </header>
+  <main>
+    <!-- Form Section -->
+    <form id="smoothie-form">
+      <div class="form-group">
+        <label for="name">Your Name:</label>
+        <input type="text" id="name" placeholder="Enter your name" required>
+      </div>
+
+      <div class="form-group">
+        <label for="size">Choose Size:</label>
+        <select id="size" required>
+          <option value="" disabled selected>Select Size</option>
+          <option value="Small">Small ($3.00)</option>
+          <option value="Medium">Medium ($4.50)</option>
+          <option value="Large">Large ($6.00)</option>
+        </select>
+      </div>
+
+      <div class="form-group">
+        <label>Ingredients (Hover for info):</label>
+        <div class="ingredients">
+          <label title="Rich in potassium!">
+            <input type="checkbox" value="Banana" data-price="1.00"> Banana ($1.00)
+          </label>
+          <label title="Sweet and refreshing!">
+            <input type="checkbox" value="Strawberry" data-price="1.50"> Strawberry ($1.50)
+          </label>
+          <label title="Tropical and juicy!">
+            <input type="checkbox" value="Mango" data-price="1.25"> Mango ($1.25)
+          </label>
+          <label title="Healthy and green!">
+            <input type="checkbox" value="Spinach" data-price="0.75"> Pineapple ($0.75)
+          </label>
+          <label title="Rich in antioxidants!">
+            <input type="checkbox" value="Blueberry" data-price="2.00"> Blueberry ($2.00)
+          </label>
+        </div>
+      </div>
+
+      <button type="button" id="order-btn" class="btn-primary">Order Smoothie</button>
+    </form>
+
+    <!-- Image Section -->
+    <div id="image-grid">
+      <div class="grid-item">
+        <img src="image1.png" alt="Smoothie Image 1">
+        <p>Refreshing Banana Smoothie</p>
+      </div>
+      <div class="grid-item">
+        <img src="image2.png" alt="Smoothie Image 2">
+        <p>Delicious Strawberry Delight</p>
+      </div>
+      <div class="grid-item">
+        <img src="image3.png" alt="Smoothie Image 3">
+        <p>Mango Madness</p>
+      </div>
+      <div class="grid-item">
+        <img src="image4.png" alt="Smoothie Image 4">
+        <p>Sweet Pineapple Blend</p>
+      </div>
+    </div>
+
+    <div id="order-summary" class="order-summary">
+      <p id="summary-text"></p>
+    </div>
+  </main>
+  <footer>
+    <p>&copy; 2024 Smoothie Builder by Netra Karki</p>
+  </footer>
+  <script src="script.js"></script>
+</body>
+</html>
